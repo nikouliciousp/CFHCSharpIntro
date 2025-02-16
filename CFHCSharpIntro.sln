@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchApp", "SwitchApp\Swit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchFallThroughApp", "SwitchFallThroughApp\SwitchFallThroughApp.csproj", "{DF7544B7-790B-4C62-BA9C-FA7A0112A0A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimesNumbersApp", "PrimesNumbersApp\PrimesNumbersApp.csproj", "{442DE785-4B7C-4CB5-9E44-FC90E2E7314F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{DF7544B7-790B-4C62-BA9C-FA7A0112A0A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF7544B7-790B-4C62-BA9C-FA7A0112A0A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF7544B7-790B-4C62-BA9C-FA7A0112A0A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{442DE785-4B7C-4CB5-9E44-FC90E2E7314F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{442DE785-4B7C-4CB5-9E44-FC90E2E7314F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{442DE785-4B7C-4CB5-9E44-FC90E2E7314F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{442DE785-4B7C-4CB5-9E44-FC90E2E7314F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
