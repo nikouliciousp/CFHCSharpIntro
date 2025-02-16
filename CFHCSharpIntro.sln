@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WriteLineApp", "WriteLineAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IgnorePositiveApp", "IgnorePositiveApp\IgnorePositiveApp.csproj", "{709F5BD4-275C-4591-A09D-B9AD233B05AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitsCountsApp", "DigitsCountsApp\DigitsCountsApp.csproj", "{40F9A65F-39FA-4C0A-A031-B18B3F975004}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{709F5BD4-275C-4591-A09D-B9AD233B05AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{709F5BD4-275C-4591-A09D-B9AD233B05AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{709F5BD4-275C-4591-A09D-B9AD233B05AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40F9A65F-39FA-4C0A-A031-B18B3F975004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40F9A65F-39FA-4C0A-A031-B18B3F975004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40F9A65F-39FA-4C0A-A031-B18B3F975004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40F9A65F-39FA-4C0A-A031-B18B3F975004}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
