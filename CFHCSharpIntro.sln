@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StdInputOutputApp", "StdInp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutputFormatApp", "OutputFormatApp\OutputFormatApp.csproj", "{CED15031-A74A-4EE2-A92E-CC2799EE9DC6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaptureApp", "CaptureApp\CaptureApp.csproj", "{C69EFCEB-C177-4A0D-B541-D56477A1D029}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{CED15031-A74A-4EE2-A92E-CC2799EE9DC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CED15031-A74A-4EE2-A92E-CC2799EE9DC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CED15031-A74A-4EE2-A92E-CC2799EE9DC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C69EFCEB-C177-4A0D-B541-D56477A1D029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C69EFCEB-C177-4A0D-B541-D56477A1D029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C69EFCEB-C177-4A0D-B541-D56477A1D029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C69EFCEB-C177-4A0D-B541-D56477A1D029}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
