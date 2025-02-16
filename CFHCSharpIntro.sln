@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IgnorePositiveApp", "Ignore
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitsCountsApp", "DigitsCountsApp\DigitsCountsApp.csproj", "{40F9A65F-39FA-4C0A-A031-B18B3F975004}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactorReacursiveApp", "FactorReacursiveApp\FactorReacursiveApp.csproj", "{F8CA7156-049A-47AC-BBEE-7C90294A8355}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmstrongApp", "AmstrongApp\AmstrongApp.csproj", "{00C5DB6D-F6EC-48E3-99B5-24994EE76B10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,14 @@ Global
 		{40F9A65F-39FA-4C0A-A031-B18B3F975004}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40F9A65F-39FA-4C0A-A031-B18B3F975004}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40F9A65F-39FA-4C0A-A031-B18B3F975004}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8CA7156-049A-47AC-BBEE-7C90294A8355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8CA7156-049A-47AC-BBEE-7C90294A8355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8CA7156-049A-47AC-BBEE-7C90294A8355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8CA7156-049A-47AC-BBEE-7C90294A8355}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00C5DB6D-F6EC-48E3-99B5-24994EE76B10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00C5DB6D-F6EC-48E3-99B5-24994EE76B10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00C5DB6D-F6EC-48E3-99B5-24994EE76B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00C5DB6D-F6EC-48E3-99B5-24994EE76B10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
