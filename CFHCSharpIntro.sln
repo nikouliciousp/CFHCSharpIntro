@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhileAddApp", "WhileAddApp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigIntegerApp", "BigIntegerApp\BigIntegerApp.csproj", "{4FA40D28-37A4-437A-88AF-F90CC330BD6B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WriteLineApp", "WriteLineApp\WriteLineApp.csproj", "{FADCCBEF-3D21-4343-B763-CB600BE33B3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{4FA40D28-37A4-437A-88AF-F90CC330BD6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FA40D28-37A4-437A-88AF-F90CC330BD6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FA40D28-37A4-437A-88AF-F90CC330BD6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FADCCBEF-3D21-4343-B763-CB600BE33B3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FADCCBEF-3D21-4343-B763-CB600BE33B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FADCCBEF-3D21-4343-B763-CB600BE33B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FADCCBEF-3D21-4343-B763-CB600BE33B3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
