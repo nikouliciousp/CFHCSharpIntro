@@ -11,6 +11,7 @@
         /// <param name="args"></param>
         static void Main(string[] args)
         {
+            // Prompt the user to enter a number between 1 and 3.
             Console.WriteLine("Enter a number between 1 and 3:");
 
             string? input = Console.ReadLine();
