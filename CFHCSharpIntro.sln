@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchFallThroughApp", "Swi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimesNumbersApp", "PrimesNumbersApp\PrimesNumbersApp.csproj", "{442DE785-4B7C-4CB5-9E44-FC90E2E7314F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiboIterApp", "FiboIterApp\FiboIterApp.csproj", "{FA772863-9C6D-430F-8E0D-76158F8B85BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{442DE785-4B7C-4CB5-9E44-FC90E2E7314F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{442DE785-4B7C-4CB5-9E44-FC90E2E7314F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{442DE785-4B7C-4CB5-9E44-FC90E2E7314F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA772863-9C6D-430F-8E0D-76158F8B85BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA772863-9C6D-430F-8E0D-76158F8B85BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA772863-9C6D-430F-8E0D-76158F8B85BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA772863-9C6D-430F-8E0D-76158F8B85BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
