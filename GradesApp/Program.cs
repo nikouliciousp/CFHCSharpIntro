@@ -1,7 +1,14 @@
 ﻿namespace GradesApp
 {
+    /// <summary>
+    /// A program that calculates the average of grades entered by the user
+    /// </summary>
     internal class Program
     {
+        /// <summary>
+        /// The entry point of the program
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             int gradesSum = 0;
@@ -43,7 +50,15 @@
             {
                 int gradesAverage = gradesSum / gradesCount;
                 Console.WriteLine($"Your average grade is {gradesAverage}");
-            }
+
+                if (gradesAverage < 50)
+                {
+                    Console.WriteLine("You failed");
+                }
+                else
+                {
+                    Console.WriteLine("You passed");
+                }
         }
     }
 }

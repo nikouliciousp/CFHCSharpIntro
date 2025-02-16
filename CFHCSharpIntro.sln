@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharReadApp", "CharReadApp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradesApp", "GradesApp\GradesApp.csproj", "{753CBBF6-D343-4378-920E-721446EB378F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhileAddApp", "WhileAddApp\WhileAddApp.csproj", "{2B9F97F6-DC24-4ECA-9C53-9D79C4207CB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigIntegerApp", "BigIntegerApp\BigIntegerApp.csproj", "{4FA40D28-37A4-437A-88AF-F90CC330BD6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{753CBBF6-D343-4378-920E-721446EB378F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{753CBBF6-D343-4378-920E-721446EB378F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{753CBBF6-D343-4378-920E-721446EB378F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B9F97F6-DC24-4ECA-9C53-9D79C4207CB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B9F97F6-DC24-4ECA-9C53-9D79C4207CB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B9F97F6-DC24-4ECA-9C53-9D79C4207CB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B9F97F6-DC24-4ECA-9C53-9D79C4207CB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FA40D28-37A4-437A-88AF-F90CC330BD6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FA40D28-37A4-437A-88AF-F90CC330BD6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FA40D28-37A4-437A-88AF-F90CC330BD6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FA40D28-37A4-437A-88AF-F90CC330BD6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
