@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigIntegerApp", "BigInteger
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WriteLineApp", "WriteLineApp\WriteLineApp.csproj", "{FADCCBEF-3D21-4343-B763-CB600BE33B3B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IgnorePositiveApp", "IgnorePositiveApp\IgnorePositiveApp.csproj", "{709F5BD4-275C-4591-A09D-B9AD233B05AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{FADCCBEF-3D21-4343-B763-CB600BE33B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FADCCBEF-3D21-4343-B763-CB600BE33B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FADCCBEF-3D21-4343-B763-CB600BE33B3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{709F5BD4-275C-4591-A09D-B9AD233B05AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{709F5BD4-275C-4591-A09D-B9AD233B05AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{709F5BD4-275C-4591-A09D-B9AD233B05AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{709F5BD4-275C-4591-A09D-B9AD233B05AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
