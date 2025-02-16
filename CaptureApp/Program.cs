@@ -1,7 +1,14 @@
 ﻿namespace CaptureApp
 {
+    /// <summary>
+    /// A simple console application that captures user input, the current date and time, and command line arguments.
+    /// </summary>
     internal class Program
     {
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             // Example 1: Capture user input
