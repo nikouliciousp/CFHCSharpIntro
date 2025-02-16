@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmstrongApp", "AmstrongApp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeapYearApp", "LeapYearApp\LeapYearApp.csproj", "{E41501D1-51B5-4539-BEFE-95B86369187B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchApp", "SwitchApp\SwitchApp.csproj", "{C4B1657F-1AFD-4AD8-AAA0-D42D2A79D1BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{E41501D1-51B5-4539-BEFE-95B86369187B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E41501D1-51B5-4539-BEFE-95B86369187B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E41501D1-51B5-4539-BEFE-95B86369187B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4B1657F-1AFD-4AD8-AAA0-D42D2A79D1BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4B1657F-1AFD-4AD8-AAA0-D42D2A79D1BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4B1657F-1AFD-4AD8-AAA0-D42D2A79D1BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4B1657F-1AFD-4AD8-AAA0-D42D2A79D1BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
