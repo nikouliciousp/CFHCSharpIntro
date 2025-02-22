@@ -34,16 +34,19 @@
         /// <returns></returns>
         public static int CalculateFactorial(int number)
         {
+            // Factorial of a negative number is undefined.
             if (number < 0)
             {
                 return 0;
             }
-           
+
+            // Factorial of 0 is 1.
             if (number == 0)
             {
                 return 1;
             }
 
+            // Calculate factorial of a number.
             return number * CalculateFactorial(number - 1);
         }
     }
