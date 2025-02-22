@@ -33,6 +33,12 @@
         {
             int min = arr[0];
             int position = 0;
+
+            if (arr == null || arr.Length == 0)
+            {
+                throw new ArgumentException("The array is null or empty");
+            }
+
             for (int i = 1; i < arr.Length; i++)
             {
                 if (arr[i] < min)
@@ -52,6 +58,12 @@
         public static int GetMinValue(int[] arr)
         {
             int min = arr[0];
+
+            if (arr == null || arr.Length == 0)
+            {
+                throw new ArgumentException("The array is null or empty");
+            }
+
             for (int i = 1; i < arr.Length; i++)
             {
                 if (arr[i] < min)
