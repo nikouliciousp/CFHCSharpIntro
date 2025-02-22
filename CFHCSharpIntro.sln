@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForApp", "ForApp\ForApp.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysApp", "ArraysApp\ArraysApp.csproj", "{F02F6575-C19A-4ABA-9603-17D35153A7E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchApp", "SearchApp\SearchApp.csproj", "{5A14DC13-975A-45BF-B1C7-09AA3442476F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{F02F6575-C19A-4ABA-9603-17D35153A7E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F02F6575-C19A-4ABA-9603-17D35153A7E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F02F6575-C19A-4ABA-9603-17D35153A7E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A14DC13-975A-45BF-B1C7-09AA3442476F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A14DC13-975A-45BF-B1C7-09AA3442476F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A14DC13-975A-45BF-B1C7-09AA3442476F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A14DC13-975A-45BF-B1C7-09AA3442476F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
