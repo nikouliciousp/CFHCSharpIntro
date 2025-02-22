@@ -11,38 +11,55 @@
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-            int key = 5;
-            int position = Search(arr, key);
-            if (position != -1)
-            {
-                Console.WriteLine("Element found at index: " + position);
-            }
-            else
-            {
-                Console.WriteLine("Element not found");
-            }
+            // Create an array of integers
+            int[] arr = { 5, 5, 2, 1, 9};
+            // Get the position of the minimum value in the array
+            int position = GetPositionOfMinValue(arr);
+            // Get the minimum value in the array
+            int minValue = GetMinValue(arr);
+            // Print the position of the minimum value
+            Console.WriteLine($"The position of the minimum value is: {position}");
+            // Print the minimum value
+            Console.WriteLine($"The minimum value is: {minValue}");
+
         }
 
         /// <summary>
-        /// Search for a key in an array
+        /// Get the position of the minimum value in an array
         /// </summary>
         /// <param name="arr"></param>
-        /// <param name="key"></param>
         /// <returns></returns>
-        public static int Search(int[] arr, int key)
+        public static int GetPositionOfMinValue(int[] arr)
         {
-            int position = -1;
-
-            for (int i = 0; i < arr.Length; i++)
+            int min = arr[0];
+            int position = 0;
+            for (int i = 1; i < arr.Length; i++)
             {
-                if (arr[i] == key)
+                if (arr[i] < min)
                 {
+                    min = arr[i];
                     position = i;
-                    break;
                 }
             }
             return position;
+        }
+
+        /// <summary>
+        /// Get the minimum value in an array
+        /// </summary>
+        /// <param name="arr"></param>
+        /// <returns></returns>
+        public static int GetMinValue(int[] arr)
+        {
+            int min = arr[0];
+            for (int i = 1; i < arr.Length; i++)
+            {
+                if (arr[i] < min)
+                {
+                    min = arr[i];
+                }
+            }
+            return min;
         }
     }
 }
