@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysApp", "ArraysApp\Arra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchApp", "SearchApp\SearchApp.csproj", "{5A14DC13-975A-45BF-B1C7-09AA3442476F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SymetricArrayApp", "SymetricArrayApp\SymetricArrayApp.csproj", "{E9D9AA94-9B9C-4E5A-8B1E-F690F92F51D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +161,10 @@ Global
 		{5A14DC13-975A-45BF-B1C7-09AA3442476F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A14DC13-975A-45BF-B1C7-09AA3442476F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A14DC13-975A-45BF-B1C7-09AA3442476F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9D9AA94-9B9C-4E5A-8B1E-F690F92F51D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9D9AA94-9B9C-4E5A-8B1E-F690F92F51D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9D9AA94-9B9C-4E5A-8B1E-F690F92F51D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9D9AA94-9B9C-4E5A-8B1E-F690F92F51D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
