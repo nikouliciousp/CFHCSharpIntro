@@ -11,7 +11,7 @@
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            const int HEIGHT = 20;
+            const int HEIGHT = 10;
             int[][] triangle = GeneratePascalTriangle(HEIGHT);
             PrintPascalTriangle(triangle);
         }
