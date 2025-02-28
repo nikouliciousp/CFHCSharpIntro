@@ -67,6 +67,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgsApp", "ArgsApp\ArgsApp.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegexApp", "RegexApp\RegexApp.csproj", "{950BDD00-8465-4CF7-9A24-0D96A54AAD98}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptionalParamApp", "OptionalParamApp\OptionalParamApp.csproj", "{3782F879-620A-4FBB-A5ED-C3EF4E070E4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -201,6 +203,10 @@ Global
 		{950BDD00-8465-4CF7-9A24-0D96A54AAD98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{950BDD00-8465-4CF7-9A24-0D96A54AAD98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{950BDD00-8465-4CF7-9A24-0D96A54AAD98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3782F879-620A-4FBB-A5ED-C3EF4E070E4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3782F879-620A-4FBB-A5ED-C3EF4E070E4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3782F879-620A-4FBB-A5ED-C3EF4E070E4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3782F879-620A-4FBB-A5ED-C3EF4E070E4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
