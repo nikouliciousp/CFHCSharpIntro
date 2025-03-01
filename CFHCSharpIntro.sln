@@ -73,6 +73,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionApp", "ExceptionAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentApp", "StudentApp\StudentApp.csproj", "{CFBF4EE1-7604-49E9-9A79-D88F044A32A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountApp", "AccountApp\AccountApp.csproj", "{6E03C281-A34C-4169-ADD5-800D7B6EB637}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -219,6 +221,10 @@ Global
 		{CFBF4EE1-7604-49E9-9A79-D88F044A32A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFBF4EE1-7604-49E9-9A79-D88F044A32A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFBF4EE1-7604-49E9-9A79-D88F044A32A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E03C281-A34C-4169-ADD5-800D7B6EB637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E03C281-A34C-4169-ADD5-800D7B6EB637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E03C281-A34C-4169-ADD5-800D7B6EB637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E03C281-A34C-4169-ADD5-800D7B6EB637}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
