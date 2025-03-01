@@ -50,7 +50,15 @@ namespace StudentApp
         /// <returns></returns>
         public override int GetHashCode()
         {
-            return HashCode.Combine(Id, FirstName, LastName);
+            unchecked
+            {
+                // Overflow is fine, just wrap
+                int hash = 17;
+                hash = hash * 23 + Id.GetHashCode();
+                hash = hash * 23 + (FirstName?.GetHashCode() ?? 0);
+                hash = hash * 23 + (LastName?.GetHashCode() ?? 0);
+                return hash;
+            }
         }
     }
 }
