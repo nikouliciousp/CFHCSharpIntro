@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace StudentApp
 {
+
     /// <summary>
     /// A simple <c>Student</c> POCO class.
     /// </summary>
-    class Student
+    internal sealed class Student
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Student"/> class.
+        /// </summary>
         public Student() { }
 
         // Fields
@@ -18,6 +22,12 @@ namespace StudentApp
         private string? firstName;
         private string? lastName;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Student"/> class.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="firstName"></param>
+        /// <param name="lastName"></param>
         public Student(int id, string? firstName, string? lastName)
         {
             Id = id;
