@@ -11,27 +11,14 @@
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            // Create a new Student object
-            Student alice = new Student();
-            Student bob = new();
-            var charlie = new Student();
+            // Create and initialize new Student objects
+            Student alice = new Student { Id = 1, FirstName = "Alice", LastName = "Smith" };
+            Student bob = new Student { Id = 2, FirstName = "Bob", LastName = "Jones" };
+            var charlie = new Student { Id = 3, FirstName = "Charlie", LastName = "Brown" };
 
-            // Set the properties of the Student object
-            alice.Id = 1;
-            alice.FirstName = "Alice";
-            alice.LastName = "Smith";
+            // Print the properties of the Student objects
             Console.WriteLine(alice.ToString());
-
-            // Set the properties of the Student object
-            bob.Id = 2;
-            bob.FirstName = "Bob";
-            bob.LastName = "Jones";
             Console.WriteLine(bob.ToString());
-
-            // Set the properties of the Student object
-            charlie.Id = 3;
-            charlie.FirstName = "Charlie";
-            charlie.LastName = "Brown";
             Console.WriteLine(charlie.ToString());
         }
     }

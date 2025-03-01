@@ -17,14 +17,40 @@ namespace StudentApp
         private string? lastName;
 
         // Properties
-        public int Id { get => id; set => id = value; }
-        public string? FirstName { get => firstName; set => firstName = value; }
-        public string? LastName { get => lastName; set => lastName = value; }
+        public int Id { get => id; init => id = value; }
+        public string? FirstName { get => firstName; init => firstName = value; }
+        public string? LastName { get => lastName; init => lastName = value; }
 
         // Methods
         public override string ToString()
         {
             return $"{Id} {FirstName} {LastName}";
+        }
+
+        /// <summary>
+        /// Determines whether the specified object is equal to the current object.
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public override bool Equals(object? obj)
+        {
+            if (obj == null || GetType() != obj.GetType())
+            {
+                return false;
+            }
+            Student? student = obj as Student;
+            return (Id == student?.Id)
+                && (FirstName?.Equals(student.FirstName) ?? student.FirstName == null)
+                && (LastName?.Equals(student.LastName) ?? student.LastName == null);
+        }
+
+        /// <summary>
+        /// Serves as the default hash function.
+        /// </summary>
+        /// <returns></returns>
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Id, FirstName, LastName);
         }
     }
 }
