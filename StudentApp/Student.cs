@@ -11,10 +11,19 @@ namespace StudentApp
     /// </summary>
     class Student
     {
+        public Student() { }
+
         // Fields
         private int id;
         private string? firstName;
         private string? lastName;
+
+        public Student(int id, string? firstName, string? lastName)
+        {
+            Id = id;
+            FirstName = firstName;
+            LastName = lastName;
+        }
 
         // Properties
         public int Id { get => id; init => id = value; }
