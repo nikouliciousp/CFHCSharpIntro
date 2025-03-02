@@ -74,6 +74,10 @@ namespace TeacherApp
             };
         }
 
+        public Teacher()
+        {
+        }
+
         /// <summary>
         /// Returns a string that represents the current object.
         /// </summary>
