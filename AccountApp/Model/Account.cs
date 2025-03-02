@@ -9,7 +9,7 @@ namespace AccountApp.Model
 {
     internal class Account
     {
-        public long Id { get; set; }
+        public long Id { get; init; }
         public string? Iban { get; set; }
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
