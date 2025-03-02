@@ -11,6 +11,7 @@
             Console.WriteLine();
             Point2D p2 = Point2D.GetPoint2D();
             p2.Move10();
+            p2.Move10();
             Console.WriteLine(p2.ToString());
 
         }
