@@ -21,6 +21,13 @@
 
             // Print the point
             Console.WriteLine(point2D);
+
+            // Create a new Point
+            IMovable point3 = Point.GetPoint();
+
+            point3.Move5();
+
+            Console.WriteLine(point3);
         }
     }
 }
