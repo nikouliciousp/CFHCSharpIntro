@@ -42,6 +42,9 @@ namespace AccountApp
                 {
                     Console.WriteLine("An unexpected error occurred");
                 }
+            } finally
+            {
+                Console.WriteLine($"Account: {account}");
             }
 
         }
