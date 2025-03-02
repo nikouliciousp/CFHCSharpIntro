@@ -51,11 +51,19 @@ namespace AccountApp.Model
             {
                 if (amount > 0)
                 {
-                    Balance -= amount;
+                    // Check if the account has enough funds
+                    if (Balance >= amount)
+                    {
+                        Balance -= amount;
+                    }
+                    else
+                    {
+                        throw new InsuffisientAmountException("Insufficient funds");
+                    }
                 }
                 else
                 {
-                    throw new InsuffisientAmountException("Amount must be greater than 0");
+                    throw new NegativeAmountException("Amount must be greater than 0");
                 }
             }
             catch (InsuffisientAmountException e)
@@ -63,6 +71,20 @@ namespace AccountApp.Model
                 Console.WriteLine(e.StackTrace);
                 throw;
             }
+            catch (NegativeAmountException e)
+            {
+                Console.WriteLine(e.StackTrace);
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// Returns a string representation of the account
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return $"Account: {Id}, {Iban}, {FirstName}, {LastName}, {SSN}, {Balance}";
         }
     }
 }
