@@ -24,6 +24,18 @@ namespace PointApp
             return new Point2D();
         }
 
+        public override bool Equals(object? obj)
+        {
+            return obj is Point2D d &&
+                   X == d.X &&
+                   Y == d.Y;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(X, Y);
+        }
+
         /// <summary>
         /// Move the point by 10 units
         /// </summary>
@@ -38,5 +50,7 @@ namespace PointApp
         /// </summary>
         /// <returns></returns>
         public override string ToString() => $"{base.ToString()}, Y: {Y}";
+
+
     }
 }

@@ -19,6 +19,17 @@ namespace PointApp
             return new Point();
         }
 
+        public override bool Equals(object? obj)
+        {
+            return obj is Point point &&
+                   X == point.X;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(X);
+        }
+
         /// <summary>
         /// Move the point by 10 units
         /// </summary>
