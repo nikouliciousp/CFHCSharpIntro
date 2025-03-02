@@ -34,6 +34,7 @@ namespace AccountApp
             }
             catch (Exception e)
             {
+                // Handle the exception
                 if (e is NegativeAmountException || e is InsuffisientAmountException)
                 {
                     Console.WriteLine(e.Message);
