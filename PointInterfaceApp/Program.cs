@@ -25,9 +25,16 @@
             // Create a new Point
             IMovable point3 = Point.GetPoint();
 
-            point3.Move5();
+            // Move the point by 5 units
+            DoMove(point3);
 
+            // Print the point
             Console.WriteLine(point3);
+        }
+
+        public static void DoMove(IMovable movable)
+        {
+            movable.Move5();
         }
     }
 }
