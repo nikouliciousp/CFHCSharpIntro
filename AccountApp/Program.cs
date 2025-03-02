@@ -32,14 +32,18 @@ namespace AccountApp
                 account.Withdraw(100m);
                 Console.WriteLine(account.ToString());
             }
-            catch (NegativeAmountException e)
+            catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                if (e is NegativeAmountException || e is InsuffisientAmountException)
+                {
+                    Console.WriteLine(e.Message);
+                }
+                else
+                {
+                    Console.WriteLine("An unexpected error occurred");
+                }
             }
-            catch (InsuffisientAmountException e)
-            {
-                Console.WriteLine(e.Message);
-            }
+
         }
     }
 }
