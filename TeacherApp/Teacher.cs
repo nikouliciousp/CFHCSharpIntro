@@ -33,7 +33,9 @@ namespace TeacherApp
         /// <returns></returns>
         public Teacher GetShallowCopy()
         {
-            return (Teacher)this.MemberwiseClone();
+            Teacher newTeacher = (Teacher)this.MemberwiseClone();
+            newTeacher.Address = this.Address; // Ensure the Address reference is copied
+            return newTeacher;
         }
 
         /// <summary>

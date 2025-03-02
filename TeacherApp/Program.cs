@@ -47,13 +47,10 @@
             shallowCopy.Id = 2;
             shallowCopy.FirstName = "Alice";
             shallowCopy.LastName = "Jones";
-            shallowCopy.Address = new Address
-            {
-                Street = "789 Oak St",
-                City = "Another Town",
-                State = "AT",
-                Zip = "67890"
-            };
+            shallowCopy.Address.Street = "789 Oak St";
+            shallowCopy.Address.City = "Another Town";
+            shallowCopy.Address.State = "AT";
+            shallowCopy.Address.Zip = "54321";
 
             // Display the shallow copy of the teacher.
             Console.WriteLine("Shallow Copy of Teacher:");
