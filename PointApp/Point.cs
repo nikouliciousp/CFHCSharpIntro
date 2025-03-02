@@ -19,12 +19,21 @@ namespace PointApp
             return new Point();
         }
 
+        /// <summary>
+        /// Get a new point
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
         public override bool Equals(object? obj)
         {
             return obj is Point point &&
                    X == point.X;
         }
 
+        /// <summary>
+        /// Get the hash code
+        /// </summary>
+        /// <returns></returns>
         public override int GetHashCode()
         {
             return HashCode.Combine(X);

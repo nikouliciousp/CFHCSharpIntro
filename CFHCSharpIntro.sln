@@ -77,6 +77,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountApp", "AccountApp\Ac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointApp", "PointApp\PointApp.csproj", "{68D8E4F2-4B51-4B7D-8D4B-361C62455D0A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeacherApp", "TeacherApp\TeacherApp.csproj", "{1C784818-D4C4-4B4A-A72A-32D23CE9D708}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -231,6 +233,10 @@ Global
 		{68D8E4F2-4B51-4B7D-8D4B-361C62455D0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68D8E4F2-4B51-4B7D-8D4B-361C62455D0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68D8E4F2-4B51-4B7D-8D4B-361C62455D0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C784818-D4C4-4B4A-A72A-32D23CE9D708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C784818-D4C4-4B4A-A72A-32D23CE9D708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C784818-D4C4-4B4A-A72A-32D23CE9D708}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C784818-D4C4-4B4A-A72A-32D23CE9D708}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
