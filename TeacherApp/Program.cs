@@ -47,6 +47,7 @@
             shallowCopy.Id = 2;
             shallowCopy.FirstName = "Alice";
             shallowCopy.LastName = "Jones";
+            // Update the address of the shallow copy.
             shallowCopy.Address.Street = "789 Oak St";
             shallowCopy.Address.City = "Another Town";
             shallowCopy.Address.State = "AT";
