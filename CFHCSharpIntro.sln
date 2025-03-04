@@ -83,6 +83,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorOverloadingApp", "O
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointInterfaceApp", "PointInterfaceApp\PointInterfaceApp.csproj", "{4BED9CF9-9D85-48C3-9854-C96A9E07654D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointMVCMonolithicApp", "PointMVCMonolithicApp\PointMVCMonolithicApp.csproj", "{3CB98CC8-F5B8-4FBE-80AF-6095BD86D731}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -249,6 +251,10 @@ Global
 		{4BED9CF9-9D85-48C3-9854-C96A9E07654D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BED9CF9-9D85-48C3-9854-C96A9E07654D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BED9CF9-9D85-48C3-9854-C96A9E07654D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CB98CC8-F5B8-4FBE-80AF-6095BD86D731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CB98CC8-F5B8-4FBE-80AF-6095BD86D731}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CB98CC8-F5B8-4FBE-80AF-6095BD86D731}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CB98CC8-F5B8-4FBE-80AF-6095BD86D731}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
