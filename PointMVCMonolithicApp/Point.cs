@@ -147,5 +147,63 @@ namespace PointMVCMonolithicApp
         {
             return !(left == right);
         }
+
+        // DAO - CRUD Operations
+
+        public void Insert()
+        {
+            points.Add(this);
+        }
+
+        /// <summary>
+        /// This method updates a point
+        /// </summary>
+        /// <param name="x"></param>
+        /// <returns></returns>
+        public bool Update(int x)
+        {
+            int pointIndex = GetPointIndex();
+            if (pointIndex < 0)
+            {
+                return false;
+            }
+            points[pointIndex].X = x;
+            return true;
+
+        }
+
+        /// <summary>
+        /// This method deletes a point
+        /// </summary>
+        /// <returns></returns>
+        public Point? Delete()
+        {
+            // Remove the point from the list
+            if (!points.Remove(this))
+            {
+                // Return null if the point is not found
+                return null;
+            }
+            return this;
+        }
+
+        /// <summary>
+        /// This method gets a point if it exists
+        /// </summary>
+        /// <returns></returns>
+        public Point? GetPoint()
+        {
+            return (points.Contains(this)) ? points[GetPointIndex()] : null;
+        }
+
+
+        /// <summary>
+        /// This method finds a point by its index
+        /// </summary>
+        /// <returns></returns>
+        private int GetPointIndex()
+        {
+            return points.IndexOf(this);
+        }
     }
 }
