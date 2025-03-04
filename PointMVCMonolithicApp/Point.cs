@@ -189,5 +189,115 @@ namespace PointMVCMonolithicApp
         {
             return points.IndexOf(this);
         }
+
+        // =================== SERVICE Operations ===================
+
+        /// <summary>
+        /// Inserts a new point into the list.
+        /// </summary>
+        public void InsertPointService()
+        {
+            Insert();
+        }
+
+        /// <summary>
+        /// Updates the X-coordinate of the current point.
+        /// </summary>
+        /// <param name="x"></param>
+        public void UpdatePointService(int x)
+        {
+            try
+            {
+                if (!Update(x))
+                {
+                    throw new InvalidOperationException("Point not found.");
+                }
+                else
+                {
+                    Console.WriteLine("Point updated successfully.");
+                }
+            }
+            catch (InvalidOperationException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// Deletes the current point from the list.
+        /// </summary>
+        /// <returns></returns>
+        public Point? DeletePointService()
+        {
+            try
+            {
+                Point? deletedPoint = Delete();
+                if (deletedPoint == null)
+                {
+                    throw new InvalidOperationException("Point not found.");
+                }
+                else
+                {
+                    Console.WriteLine("Point deleted successfully.");
+                    return deletedPoint;
+                }
+            }
+            catch (InvalidOperationException ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// Gets the current point from the list if it exists.
+        /// </summary>
+        /// <returns></returns>
+        public Point? GetPointService()
+        {
+            try
+            {
+                Point? point = GetPoint();
+                if (point == null)
+                {
+                    throw new InvalidOperationException("Point not found.");
+                }
+                else
+                {
+                    Console.WriteLine("Point found successfully.");
+                    return point;
+                }
+            }
+            catch (InvalidOperationException ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// Gets all points from the list.
+        /// </summary>
+        /// <returns></returns>
+        public static List<Point> GetPointsService()
+        {
+            try
+            {
+                if (points.Count == 0)
+                {
+                    throw new InvalidOperationException("No points found.");
+                }
+                else
+                {
+                    Console.WriteLine("Points retrieved successfully.");
+                    return Points;
+                }
+            }
+            catch (InvalidOperationException ex)
+            {
+                Console.WriteLine(ex.Message);
+                return new List<Point>();
+            }
+        }
     }
 }
