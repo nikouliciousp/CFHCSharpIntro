@@ -196,7 +196,6 @@ namespace PointMVCMonolithicApp
             return (points.Contains(this)) ? points[GetPointIndex()] : null;
         }
 
-
         /// <summary>
         /// This method finds a point by its index
         /// </summary>
