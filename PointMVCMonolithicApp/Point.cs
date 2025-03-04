@@ -1,136 +1,127 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PointMVCMonolithicApp
 {
     /// <summary>
-    /// This class represents a point
+    /// This class represents a point in a one-dimensional space.
     /// </summary>
-    class Point : IComparable<Point>, IEquatable<Point>
+    public class Point : IComparable<Point>, IEquatable<Point>
     {
+        /// <summary>
+        /// Gets or sets the X-coordinate of the point.
+        /// </summary>
         public int X { get; set; }
 
-        // A List of Points
+        /// <summary>
+        /// A static list that stores all point instances.
+        /// </summary>
         private static readonly List<Point> points = new();
 
-        // Properties
-        public static List<Point> Points { get { return new List<Point>(points); } }
+        /// <summary>
+        /// Gets a copy of the list containing all points.
+        /// </summary>
+        public static List<Point> Points => new(points);
 
         /// <summary>
-        /// This method compares two points for equality
+        /// Compares the current point with another point based on the X-coordinate.
         /// </summary>
-        /// <param name="other"></param>
-        /// <returns></returns>
+        /// <param name="other">The other point to compare.</param>
+        /// <returns>
+        /// A negative value if this point is smaller, zero if equal, 
+        /// and a positive value if this point is greater.
+        /// </returns>
         public int CompareTo(Point? other)
         {
             if (other == null) return 1;
-            return X - other.X;
+            return X.CompareTo(other.X);
         }
 
         /// <summary>
-        /// This method equals two points via the CompareTo method
+        /// Determines whether the current point is equal to another point.
         /// </summary>
-        /// <param name="other"></param>
-        /// <returns></returns>
+        /// <param name="other">The other point to compare.</param>
+        /// <returns>True if both points have the same X-coordinate, otherwise false.</returns>
         public bool Equals(Point? other)
         {
             if (other == null) return false;
-            return CompareTo(other) == 0;
+            return X == other.X;
         }
 
         /// <summary>
-        /// This method equals two points via the CompareTo method
+        /// Determines whether the current point is equal to another object.
         /// </summary>
-        /// <param name="obj"></param>
-        /// <returns></returns>
+        /// <param name="obj">The object to compare.</param>
+        /// <returns>True if the object is a Point and has the same X-coordinate, otherwise false.</returns>
         public override bool Equals(object? obj)
         {
-            if (obj is null || GetType() != obj.GetType())
-            {
-                return false;
-            }
-            return CompareTo((Point)obj) == 0;
+            if (obj is not Point other) return false;
+            return Equals(other);
         }
 
         /// <summary>
-        /// This method returns the hash code of a point
+        /// Gets the hash code for the point.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>The hash code of the point based on its X-coordinate.</returns>
         public override int GetHashCode()
         {
             return HashCode.Combine(X);
         }
 
         /// <summary>
-        /// This method returns the string representation of a point
+        /// Returns a string representation of the point.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>A string in the format "Point: X".</returns>
         public override string ToString()
         {
             return $"Point: {X}";
         }
 
+        // =================== Operator Overloads ===================
+
         /// <summary>
-        /// This method overrides the > operator
+        /// Checks if one point is greater than another.
         /// </summary>
-        /// <param name="left"></param>
-        /// <param name="right"></param>
-        /// <returns></returns>
         public static bool operator >(Point? left, Point? right)
         {
             if (left is null) return false;
             if (right is null) return true;
-            return left.CompareTo(right) > 0;
+            return left.X > right.X;
         }
 
         /// <summary>
-        /// This method overrides the < operator
+        /// Checks if one point is less than another.
         /// </summary>
-        /// <param name="left"></param>
-        /// <param name="right"></param>
-        /// <returns></returns>
         public static bool operator <(Point? left, Point? right)
         {
             if (left is null) return right is not null;
             if (right is null) return false;
-            return left.CompareTo(right) < 0;
+            return left.X < right.X;
         }
 
         /// <summary>
-        /// This method overrides the >= operator
+        /// Checks if one point is greater than or equal to another.
         /// </summary>
-        /// <param name="left"></param>
-        /// <param name="right"></param>
-        /// <returns></returns>
         public static bool operator >=(Point? left, Point? right)
         {
             if (left is null) return right is null;
             if (right is null) return true;
-            return left.CompareTo(right) >= 0;
+            return left.X >= right.X;
         }
 
         /// <summary>
-        /// This method overrides the <= operator
+        /// Checks if one point is less than or equal to another.
         /// </summary>
-        /// <param name="left"></param>
-        /// <param name="right"></param>
-        /// <returns></returns>
         public static bool operator <=(Point? left, Point? right)
         {
             if (left is null) return true;
             if (right is null) return false;
-            return left.CompareTo(right) <= 0;
+            return left.X <= right.X;
         }
 
         /// <summary>
-        /// This method overrides the == operator
+        /// Checks if two points are equal.
         /// </summary>
-        /// <param name="left"></param>
-        /// <param name="right"></param>
-        /// <returns></returns>
         public static bool operator ==(Point? left, Point? right)
         {
             if (left is null) return right is null;
@@ -138,68 +129,62 @@ namespace PointMVCMonolithicApp
         }
 
         /// <summary>
-        /// This method overrides the != operator
+        /// Checks if two points are not equal.
         /// </summary>
-        /// <param name="left"></param>
-        /// <param name="right"></param>
-        /// <returns></returns>
         public static bool operator !=(Point? left, Point? right)
         {
             return !(left == right);
         }
 
-        // DAO - CRUD Operations
+        // =================== CRUD Operations ===================
 
+        /// <summary>
+        /// Inserts the current point into the list.
+        /// </summary>
         public void Insert()
         {
             points.Add(this);
         }
 
         /// <summary>
-        /// This method updates a point
+        /// Updates the X-coordinate of the current point.
         /// </summary>
-        /// <param name="x"></param>
-        /// <returns></returns>
+        /// <param name="x">The new X value.</param>
+        /// <returns>True if the update was successful, otherwise false.</returns>
         public bool Update(int x)
         {
-            int pointIndex = GetPointIndex();
-            if (pointIndex < 0)
+            int index = GetPointIndex();
+            if (index < 0)
             {
                 return false;
             }
-            points[pointIndex].X = x;
+            points[index].X = x;
             return true;
-
         }
 
         /// <summary>
-        /// This method deletes a point
+        /// Deletes the current point from the list.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>The deleted point if successful, otherwise null.</returns>
         public Point? Delete()
         {
-            // Remove the point from the list
-            if (!points.Remove(this))
-            {
-                // Return null if the point is not found
-                return null;
-            }
-            return this;
+            return points.Remove(this) ? this : null;
         }
 
         /// <summary>
-        /// This method gets a point if it exists
+        /// Gets the current point from the list if it exists.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>The point if found, otherwise null.</returns>
         public Point? GetPoint()
         {
-            return (points.Contains(this)) ? points[GetPointIndex()] : null;
+            int index = GetPointIndex();
+            return index >= 0 ? points[index] : null;
         }
 
         /// <summary>
-        /// This method finds a point by its index
+        /// Finds the index of the current point in the list.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>The index of the point if found, otherwise -1.</returns>
         private int GetPointIndex()
         {
             return points.IndexOf(this);
