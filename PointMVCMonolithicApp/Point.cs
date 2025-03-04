@@ -14,7 +14,7 @@ namespace PointMVCMonolithicApp
         public int X { get; set; }
 
         // A List of Points
-        private static readonly List<Point> points = new List<Point>();
+        private static readonly List<Point> points = new();
 
         // Properties
         public static List<Point> Points { get { return new List<Point>(points); } }
