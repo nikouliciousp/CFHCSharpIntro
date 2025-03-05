@@ -38,6 +38,6 @@ namespace PointSOAApp.DAO
         /// </summary>
         /// <param name="x">The index of the point to retrieve.</param>
         /// <returns>The Point object at the specified index, or null if not found.</returns>
-        Point GetPointByIndex(int x);
+        Point GetPoint(int x);
     }
 }

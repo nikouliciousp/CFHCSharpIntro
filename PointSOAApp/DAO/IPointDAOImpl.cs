@@ -74,7 +74,7 @@ namespace PointSOAApp.DAO
         /// </summary>
         /// <param name="x">The X-coordinate of the point to retrieve.</param>
         /// <returns>The Point object with the specified X-coordinate.</returns>
-        public Point GetPointByIndex(int x)
+        public Point GetPoint(int x)
         {
             Point? point = points.Find(p => p.X == x);
             if (point == null) throw new ArgumentException("Point not found in the data store.", nameof(x));
