@@ -85,6 +85,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointInterfaceApp", "PointI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointMVCMonolithicApp", "PointMVCMonolithicApp\PointMVCMonolithicApp.csproj", "{3CB98CC8-F5B8-4FBE-80AF-6095BD86D731}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointSOAApp", "PointSOAApp\PointSOAApp.csproj", "{26882515-0780-4DB5-912A-27A1AFEF7B8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -255,6 +257,10 @@ Global
 		{3CB98CC8-F5B8-4FBE-80AF-6095BD86D731}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CB98CC8-F5B8-4FBE-80AF-6095BD86D731}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CB98CC8-F5B8-4FBE-80AF-6095BD86D731}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26882515-0780-4DB5-912A-27A1AFEF7B8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26882515-0780-4DB5-912A-27A1AFEF7B8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26882515-0780-4DB5-912A-27A1AFEF7B8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26882515-0780-4DB5-912A-27A1AFEF7B8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
