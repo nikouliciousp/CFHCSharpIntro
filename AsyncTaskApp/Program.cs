@@ -9,9 +9,10 @@
         /// The main entry point of the application.
         /// </summary>
         /// <param name="args"></param>
-        static void Main(string[] args)
+        /// <returns></returns>
+        static async Task Main(string[] args)
         {
-            ReadDisplayFile().Wait();
+            await ReadDisplayFile();
         }
 
         /// <summary>
