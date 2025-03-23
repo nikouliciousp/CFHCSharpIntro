@@ -26,7 +26,12 @@ namespace WebAppEmpty
             // Redirects all HTTP requests to HTTPS
             app.UseHttpsRedirection();
 
-            app.MapGet("/", () => "Hello World!");
+            // Serves static files and short-circuits further request processing
+            app.MapGet("/", async context =>
+            {
+                // Writes the given string to the response body
+                await context.Response.WriteAsync("Hello World!");
+            });
 
             app.Run();
 
