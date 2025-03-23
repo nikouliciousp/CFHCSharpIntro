@@ -19,12 +19,20 @@ namespace WebAppEmpty
             // Configure the HTTP request pipeline
             if (!app.Environment.IsDevelopment())
             {
+                // Exception handler middleware is used to catch exceptions that occur during the processing of requests
+                app.UseExceptionHandler("/Error");
+
                 // HTTP Strict Transport Security (HSTS) is a web security policy mechanism that helps to protect websites
                 app.UseHsts();
             }
+            else
+            {
+                // Developer exception page displays detailed information about the exception
+                app.UseDeveloperExceptionPage();
+            }
 
-            // Redirects all HTTP requests to HTTPS
-            app.UseHttpsRedirection();
+                // Redirects all HTTP requests to HTTPS
+                app.UseHttpsRedirection();
 
             // Serves static files and short-circuits further request processing
             app.MapGet("/", async context =>
