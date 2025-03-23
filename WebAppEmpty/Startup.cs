@@ -29,9 +29,9 @@
                 app.UseHsts();
             }
 
+            app.UseRouting();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-            app.UseRouting();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
