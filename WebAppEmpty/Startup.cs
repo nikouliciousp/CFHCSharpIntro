@@ -2,43 +2,34 @@
 {
     public class Startup
     {
-        /// <summary>
-        /// This method gets called by the runtime. Use this method to add services to the container.
-        /// </summary>
-        /// <param name="services"></param>
-        public void ConfigureServices(IServiceCollection services)
-        {
-            // Add services to the container
-            services.AddControllersWithViews();
-        }
+        // ... other code ...
 
-        /// <summary>
-        /// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        /// </summary>
-        /// <param name="app"></param>
-        /// <param name="env"></param>
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            // If the environment is development, use the developer exception page
             if (env.IsDevelopment())
             {
+                // Use the developer exception page
                 app.UseDeveloperExceptionPage();
             }
             else
             {
+                // Use the exception handler page
                 app.UseExceptionHandler("/Home/Error");
+                // Use the HSTS
                 app.UseHsts();
             }
 
             app.UseRouting();
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
-            app.UseAuthorization();
 
+            // Use endpoint routing
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapGet("/", async context =>
+                {
+                    await context.Response.WriteAsync("Hello World!");
+                });
             });
         }
     }
